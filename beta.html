@@ -127,7 +127,7 @@
             color: white;
         }
 
-        .album-images div {
+        .album-images picture {
             width: 49%;
             display: inline-block;
         }
@@ -195,7 +195,10 @@
 
 <body>
 <header>
-    <img src="/assets/portrait.webp" alt="A portrait of Ja, Panik">
+    <picture>
+        <source type="image/webp" srcset="/assets/portrait.webp">
+        <img src="/assets/portrait.jpeg" alt="A portrait of Ja, Panik">
+    </picture>
 </header>
 <main>
     <section>
@@ -205,12 +208,14 @@
         <a href="https://japanik.loveyourartist.store/de/" class="button">Preorder</a>
     </section>
     <section class="album-images">
-        <div>
-            <img src="/assets/vinyl-cover.webp" alt="The cover of the vinyl version of Ja, Panik's album 'Die Gruppe'">
-        </div>
-        <div>
-            <img src="/assets/cd-inside.webp" alt="The inside of the CD version of Ja, Panik's album 'Die Gruppe'">
-        </div>
+        <picture>
+            <source type="image/webp" srcset="/assets/vinyl-cover.webp">
+            <img src="/assets/vinyl-cover.jpeg" alt="The cover of the vinyl version of Ja, Panik's album 'Die Gruppe'">
+        </picture>
+        <picture>
+            <source type="image/webp" srcset="/assets/cd-inside.webp">
+            <img src="/assets/cd-inside.jpeg" alt="The inside of the CD version of Ja, Panik's album 'Die Gruppe'">
+        </picture>
     </section>
     <section class="video">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vs0USvE-lzM"
