@@ -88,7 +88,20 @@
             margin: 0;
         }
 
-        header img {
+        .counterpoint {
+            margin-bottom: 8rem;
+        }
+
+        .counterpoint img {
+            max-width: 100%;
+        }
+
+        .counterpoint-links > * {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        .portrait img {
             max-width: 100%;
         }
 
@@ -190,22 +203,33 @@
         footer a:hover svg:hover {
             fill: white;
         }
-
-
     </style>
 </head>
 
 <body>
-<header>
+<header class="counterpoint">
+    <picture>
+        <source type="image/webp" srcset="/assets/counterpoint.webp">
+        <img src="/assets/counterpoint.jpg" alt="The cover of 06:40 (Berlin Counterpoint)">
+    </picture>
+    <div>
+        <h1><span class="highlight">06:40</span> (Berlin Counterpoint)</h1>
+        <h2>Out now</h2>
+        <div class="counterpoint-links">
+            <a href="https://open.spotify.com/album/50ZudBlEBQAPFpPp37pNFg" class="button">Spotify</a>
+            <a href="https://music.apple.com/es/album/06-40-berlin-counterpoint-single/1607142280" class="button">Apple Music</a>
+        </div>
+    </div>
+</header>
+<aside class="portrait">
     <picture>
         <source type="image/webp" srcset="/assets/portrait.webp">
         <img src="/assets/portrait.jpeg" alt="A portrait of Ja, Panik">
     </picture>
-</header>
+</aside>
 <main>
     <section>
         <h1><span class="highlight">Die Gruppe</span> Ja,Panik</h1>
-        <h2>New Album • Out now</h2>
         <div>Vinyl / Vinyl Limited Deluxe / CD / MC / Digital</div>
         <a href="https://japanik.loveyourartist.store/de/" class="button">Order now</a>
     </section>
